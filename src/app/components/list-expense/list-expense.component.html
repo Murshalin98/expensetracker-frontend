@@ -5,4 +5,5 @@
     <p> {{ expense.amount | currency: 'INR' }} </p>
 
     <a routerLink="/editexpense/{{expense.id}}"> Edit </a>
+    <button (click)="deleteExpense(expense.id)">Delete</button>
 </div>
